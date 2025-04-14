@@ -10,7 +10,7 @@ public class Frase {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String titulo;
-    private String frases;
+    private String frase;
     private String personagem;
     private String poster;
 
@@ -31,11 +31,11 @@ public class Frase {
     }
 
     public String getFrases() {
-        return frases;
+        return frase;
     }
 
     public void setFrases(String frases) {
-        this.frases = frases;
+        this.frase = frases;
     }
 
     public String getPersonagem() {
