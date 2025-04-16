@@ -10,7 +10,7 @@ public class FraseService {
     private FraseRepository repositorio;
 
     public FraseDTO obterFraseAleatoria() {
-        Frase frase = repositorio.findById(4l).get();
+        Frase frase = repositorio.buscaFraseAleatoria();
         return new FraseDTO(frase.getTitulo(), frase.getFrases(), frase.getPersonagem(), frase.getPoster());
     }
 }
